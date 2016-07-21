@@ -1,0 +1,117 @@
+body{
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content{
+	text-align: center;
+	color: rgb(56, 56, 56);
+	height: 100%;
+	width: 40%;
+	margin: auto;
+}
+
+#content .project{
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+#content .project:first-child  #title .headline{
+	font-size: 36px;
+}
+#content .project:first-child{
+	margin-top: 200px;
+	width: 100%;
+}
+#content .project #title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+	z-index: 9;
+}
+#content .project #title .headline{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+#content .project #title .subline{
+    width: 100%;
+    margin-top: 40px;
+	font-size: 15px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	letter-spacing: 2px;
+}
+#content .project .pic{
+    width: 100%;
+    display: block;
+
+}
+#content .spacer img{
+    width: 4%;
+    display: block;
+    clear: both;
+}
+#content .project .dark{
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0px;
+	background-color: black;
+	opacity: 0.6;
+    z-index: 2;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+}
+#content .project:hover .dark{
+	opacity: 0.8;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+}
+#content .project:nth-child(3n+3){
+	margin-right: 25%;
+}
+
+
+
+/* ------------------------------- mobile -------------------------------*/
+
+@media only screen and (max-device-width: 600px)
+{
+        #content{
+            width: 90%;
+        }
+		#content .spacer img{
+			display: none;
+		}
+		#content .project{
+			float: none;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		#content .project:first-child  #title .headline{
+			font-size: 20px;
+
+		}
+		#content .project #title .headline{
+			font-size: 20px;
+		}
+		#content .project #title .subline{
+			margin-top: 15px;
+		}
+}

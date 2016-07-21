@@ -1,0 +1,104 @@
+body{
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	color: black;
+}
+
+#content{
+	text-align: center;
+	color: rgb(56, 56, 56);
+	height: 100%;
+	width: 76%;
+	margin: auto;
+}
+#content .headline{
+	width: 100%;
+	left: 0%;
+	margin-left: 0px;
+	font-size: 26px;
+	letter-spacing: 2px;
+}
+#content #whatido{
+	width: 100%;
+	left: 0%;
+	margin-left: 0px;
+	margin-top: 30px;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+#content #about{
+	width: 100%;
+	left: 0%;
+	margin-left: 0px;
+	margin-top: 200px;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+#content #social{
+	width: 100%;
+	left: 0%;
+	margin-left: 0px;
+	margin-top: 40px;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+#content #social a{
+	text-decoration: none;
+	color: rgb(56, 56, 56);
+	margin: 0px 15px;
+}
+#content #social a:hover{
+    text-decoration: underline;
+}
+#content #vertical{
+	height: 50px;
+	width: 50%;
+	border-right: 2px solid rgb(56, 56, 56);
+	margin-left: -1px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+#content #profilepic{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#content #profilepic img{
+	width: 15%;
+}
+#content #contact{
+	font-size: 26px;
+	letter-spacing: 2px;
+}
+
+/* ------------------------------- mobile -------------------------------*/
+
+@media only screen and (max-device-width: 600px)
+{
+    #content{
+            width: 90%;
+        }
+		#content #about{
+			font-size: 20px;
+		}
+		#content #social{
+			font-size: 10px;
+		}
+		#content #profilepic img{
+			width: 30%;
+
+		}
+		#content #whatido{
+			font-size: 10px;
+		}
+		#content .headline{
+			font-size: 20px;
+		}
+		#content #contact{
+			font-size: 20px;
+		}
+
+
+}
